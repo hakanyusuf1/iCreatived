@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>icra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .passion {
+        width: 250px;
+        height: 150px;
+        background-color: skyblue;
+        transform: rotate(-90deg);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header
+      class="container sticky top-0 bg-white shadow-md flex flex-col justify z-10 mx-auto"
+    >
+      <div class="flex justify-between relative items-center font-semibold">
+        <div
+          class="burger-bar container mx-auto overflow-hidden absolute top-0 right-0 transition-all duration-150 p-5 bg-burgerBarBg h-0 invisible"
+        >
+          <div class="relative flex">
+            <p class="-mb-5 pb-0 text-sm select-none text-black">
+              search İCreatived
+            </p>
+            <div
+              id="burger-close"
+              class="absolute cursor-pointer right-5 flex justify-center items-center"
+            >
+              <div>
+                <svg width="32" height="32" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="m12 10.586l4.95-4.95l1.414 1.414l-4.95 4.95l4.95 4.95l-1.414 1.414l-4.95-4.95l-4.95 4.95l-1.414-1.414l4.95-4.95l-4.95-4.95L7.05 5.636z"
+                  />
+                </svg>
+              </div>
+              <span class="text-2xl font-bold"> Close </span>
+            </div>
+          </div>
+          <div class="mt-5 border-b flex items-center">
+            <svg width="64" height="64" viewBox="0 0 24 24">
+              <path
+                fill="gray"
+                d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+              />
+            </svg>
+            <input
+              class="text-3xl md:text-6xl bg-burgerBarBg w-full font-bold p-2 outline-none"
+              type="text"
+              placeholder="Type Something"
+            />
+          </div>
+          <div class="m-6 md:m-12 flex gap-10 md:gap-32">
+            <div class="">
+              <ul class="leading-8 h-full">
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Gear</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Tech</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Rides</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Style</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Living</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Food</a
+                  >
+                </li>
+              </ul>
+              <div class="social-icons flex gap-4">
+                <a
+                  ><svg width="16" height="16" viewBox="0 0 20 20">
+                    <path
+                      fill="currentColor"
+                      d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h14c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2zM9.984 15.523a5.539 5.539 0 0 0 5.538-5.539c0-.338-.043-.664-.103-.984H17v7.216a.69.69 0 0 1-.693.69H3.693a.69.69 0 0 1-.693-.69V9h1.549c-.061.32-.104.646-.104.984a5.54 5.54 0 0 0 5.539 5.539zM6.523 9.984a3.461 3.461 0 1 1 6.922 0a3.461 3.461 0 0 1-6.922 0zM16.307 6h-1.615A.694.694 0 0 1 14 5.308V3.691c0-.382.31-.691.691-.691h1.615c.384 0 .694.309.694.691v1.616c0 .381-.31.693-.693.693z"
+                    />
+                  </svg>
+                </a>
+                <a>
+                  <svg width="16" height="16" viewBox="0 0 20 20">
+                    <path
+                      fill="currentColor"
+                      d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2z"
+                    />
+                  </svg>
+                </a>
+                <a>
+                  <svg width="16" height="16" viewBox="0 0 20 20">
+                    <path
+                      fill="currentColor"
+                      d="M17.316 6.246c.008.162.011.326.011.488c0 4.99-3.797 10.742-10.74 10.742c-2.133 0-4.116-.625-5.787-1.697a7.577 7.577 0 0 0 5.588-1.562a3.779 3.779 0 0 1-3.526-2.621a3.858 3.858 0 0 0 1.705-.065a3.779 3.779 0 0 1-3.028-3.703v-.047a3.766 3.766 0 0 0 1.71.473a3.775 3.775 0 0 1-1.168-5.041a10.716 10.716 0 0 0 7.781 3.945a3.813 3.813 0 0 1-.097-.861a3.773 3.773 0 0 1 3.774-3.773a3.77 3.77 0 0 1 2.756 1.191a7.602 7.602 0 0 0 2.397-.916a3.789 3.789 0 0 1-1.66 2.088a7.55 7.55 0 0 0 2.168-.594a7.623 7.623 0 0 1-1.884 1.953z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="">
+              <ul class="leading-8 h-full">
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Buyer's Guides</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Everyday Carry</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Entertainment</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Grooming</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-semibold text-lg hover:text-gray-500 transition-all hover:underline"
+                    href="#"
+                    >Vices</a
+                  >
+                </li>
+              </ul>
+              <div class="flex gap-1 md:gap-4 text-[12px]">
+                <a href="#">Advertise</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center">
+          <span id="burger-button" class="cursor-pointer">
+            <svg width="32" height="32" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M21 18H3v-2h18v2Zm0-5H3v-2h18v2Zm0-5H3V6h18v2Z"
+              />
+            </svg>
+          </span>
+          <span><img class="w-52" src="./img/logo.jpg" alt="" /></span>
+        </div>
+        <div class="w-full h-full relative">
+          <div
+            class="searchİnput absolute z-30 border invisible flex transition-all w-full -translate-y-[200%] top-full"
+          >
+            <svg
+              class="hidden md:block"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="gray"
+                d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+              />
+            </svg>
+            <input
+              type="text"
+              placeholder="Search"
+              class="w-full text-xl indent-2 md:indent-3 outline-none"
+            />
+          </div>
+        </div>
+        <div class="flex justify-center searchButton gap-3 items-center">
+          <p class="font-bold text-xl hidden md:block select-none">SEARCH</p>
+          <div>
+            <svg width="40" height="40" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="m18.9 20.3l-5.6-5.6q-.75.6-1.725.95Q10.6 16 9.5 16q-2.725 0-4.612-1.887Q3 12.225 3 9.5q0-2.725 1.888-4.613Q6.775 3 9.5 3t4.613 1.887Q16 6.775 16 9.5q0 1.1-.35 2.075q-.35.975-.95 1.725l5.625 5.625q.275.275.275.675t-.3.7q-.275.275-.7.275q-.425 0-.7-.275ZM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5q0-1.875-1.312-3.188Q11.375 5 9.5 5Q7.625 5 6.312 6.312Q5 7.625 5 9.5q0 1.875 1.312 3.188Q7.625 14 9.5 14Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto">
+      <section class="m-1 grid grid-cols-12 gap-1 lg:gap-3">
+        <div class="col-span-12 lg:col-span-9">
+          <img src="./img/resim4.jpg" alt="" />
+        </div>
+        <div class="col-span-12 lg:col-span-3 gap-1 lg:gap-3 flex lg:grid">
+          <div class="w-1/2 lg:w-full">
+            <img
+              class="w-full h-full object-cover"
+              src="./img/resim2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="w-1/2 lg:w-full">
+            <img
+              class="w-full h-full object-cover"
+              src="./img/resim3.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section class="container mx-auto flex mt-6 justify-center items-center">
+        <img src="./img/reklam1.jpg" alt="" />
+      </section>
+      <section>
+        <h1 class="mx-10 text-5xl md:text-6xl">
+          TOP <span class="font-bold">STORIES</span>
+        </h1>
+      </section>
+      <section class="grid grid-cols-12 gap-9 max-w-full overflow-hidden">
+        <div class="col-span-12 md:col-span-6">
+          <div class="h-96 w-full">
+            <img
+              src="./img/reklam2.jpg"
+              alt=""
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="">
+            <div class="flex justify-between">
+              <h3 class="font-bold italic">Art</h3>
+              <p>Posted by HYB</p>
+            </div>
+            <div class="inline-block">
+              <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              <p class="text-lg">
+                Magni corrupti beatae illo autem. Magnam, saepe. Magni corrupti
+                dipisicing elit. Omnis, a! beatae illo autem. Magnam, saepe.
+                <a class="text-red-700 underline block lg:inline" href="#">
+                  Read more &#xbb; &#xbb; &#xbb;</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-12 md:col-span-6">
+          <div class="h-96 w-full">
+            <img
+              src="./img/resim2.jpg"
+              alt=""
+              class="h-full w-full object-cover"
+            />
+          </div>
+          <div class="">
+            <div class="flex justify-between">
+              <h3 class="font-bold italic">Art</h3>
+              <p>Posted by HYB</p>
+            </div>
+            <div class="inline-block">
+              <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              <p class="text-lg">
+                Magni corrupti beatae illo autem. Magnam, saepe. Magni corrupti
+                dipisicing elit. Omnis, a! beatae illo autem. Magnam, saepe.
+                <a class="text-red-700 underline block lg:inline" href="#">
+                  Read more &#xbb; &#xbb; &#xbb;</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h1 class="mx-10 mt-5 text-5xl md:text-6xl">
+          LATEST <span class="font-bold">STORIES</span>
+        </h1>
+      </section>
+      <div class="flex justify-center flex-col lg:flex-row">
+        <section>
+          <div class="grid grid-cols-2 gap-3 lg:gap-5 mt-2 p-4">
+            <a href="#">
+              <img src="./img/resim1.jpg" alt="" />
+              <div>
+                <h3 class="underline font-bold">Art</h3>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              </div>
+            </a>
+            <a href="#">
+              <img src="./img/resim2.jpg" alt="" />
+              <div>
+                <h3 class="underline font-bold">Art</h3>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              </div>
+            </a>
+            <a href="#">
+              <img src="./img/resim3.jpg" alt="" />
+              <div>
+                <h3 class="underline font-bold">Art</h3>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              </div>
+            </a>
+            <a href="#">
+              <img src="./img/resim4.jpg" alt="" />
+              <div>
+                <h3 class="underline font-bold">Art</h3>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              </div>
+            </a>
+            <a href="#">
+              <img src="./img/resim1.jpg" alt="" />
+              <div>
+                <h3 class="underline font-bold">Art</h3>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              </div>
+            </a>
+            <a href="#">
+              <img src="./img/resim1.jpg" alt="" />
+              <div>
+                <h3 class="underline font-bold">Art</h3>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              </div>
+            </a>
+            <a href="#">
+              <img src="./img/resim1.jpg" alt="" />
+              <div>
+                <h3 class="underline font-bold">Art</h3>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              </div>
+            </a>
+            <a href="#">
+              <img src="./img/resim1.jpg" alt="" />
+              <div>
+                <h3 class="underline font-bold">Art</h3>
+              </div>
+              <div>
+                <h2 class="font-bold text-xl">Lorem ipsum dolor sit amet</h2>
+              </div>
+            </a>
+          </div>
+        </section>
+        <div>
+          <div class="hidden lg:block mt-6" style="width: 220px">
+            <img src="./img/reklam2.jpg" alt="" />
+          </div>
+
+          <div class="block lg:hidden mt-6">
+            <img src="./img/reklam1.jpg" alt="" />
+          </div>
+          <div class="mx-5 lg:mx-0">
+            <h3 style="margin: 15px 0 5px">POPULAR NOW!</h3>
+            <div
+              class="flex flex-row flex-wrap lg:flex-col lg:flex-nowrap gap-6"
+              style="width: 100%"
+            >
+              <a
+                style="display: flex; gap: 5px; margin-bottom: 5px"
+                href=""
+                target="_blank"
+              >
+                <div style="width: 55%; height: 80%">
+                  <img
+                    style="width: 100%; height: 120px; object-fit: cover"
+                    src="./img/resim3.jpg"
+                    alt=""
+                  />
+                </div>
+                <div style="width: 50%; box-sizing: border-box; padding: 5px">
+                  <div style="font-size: 14px; margin-bottom: 3px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <div class="text-sm" style="font-weight: 900">16K views</div>
+                </div>
+              </a>
+              <a
+                style="display: flex; gap: 5px; margin-bottom: 5px"
+                href=""
+                target="_blank"
+              >
+                <div style="width: 55%; height: 80%">
+                  <img
+                    style="width: 100%; height: 120px; object-fit: cover"
+                    src="./img/resim2.jpg"
+                    alt=""
+                  />
+                </div>
+                <div style="width: 50%; box-sizing: border-box; padding: 5px">
+                  <div style="font-size: 14px; margin-bottom: 3px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <div class="text-sm" style="font-weight: 900">16K views</div>
+                </div>
+              </a>
+              <a
+                style="display: flex; gap: 5px; margin-bottom: 5px"
+                href=""
+                target="_blank"
+              >
+                <div style="width: 55%; height: 80%">
+                  <img
+                    style="width: 100%; height: 120px; object-fit: cover"
+                    src="./img/reklam1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div style="width: 50%; box-sizing: border-box; padding: 5px">
+                  <div style="font-size: 14px; margin-bottom: 3px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <div class="text-sm" style="font-weight: 900">16K views</div>
+                </div>
+              </a>
+              <a
+                style="display: flex; gap: 5px; margin-bottom: 5px"
+                href=""
+                target="_blank"
+              >
+                <div style="width: 55%; height: 80%">
+                  <img
+                    style="width: 100%; height: 120px; object-fit: cover"
+                    src="./img/resim4.jpg"
+                    alt=""
+                  />
+                </div>
+                <div style="width: 50%; box-sizing: border-box; padding: 5px">
+                  <div style="font-size: 14px; margin-bottom: 3px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <div class="text-sm" style="font-weight: 900">16K views</div>
+                </div>
+              </a>
+              <a
+                style="display: flex; gap: 5px; margin-bottom: 5px"
+                href=""
+                target="_blank"
+              >
+                <div style="width: 55%; height: 80%">
+                  <img
+                    style="width: 100%; height: 120px; object-fit: cover"
+                    src="./img/resim1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div style="width: 50%; box-sizing: border-box; padding: 5px">
+                  <div style="font-size: 14px; margin-bottom: 3px">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </div>
+                  <div class="text-sm" style="font-weight: 900">16K views</div>
+                </div>
+              </a>
+              <div class="hidden lg:flex justify-between">
+                <button
+                  style="
+                    text-decoration: underline;
+                    text-decoration-color: yellow;
+                    text-decoration-thickness: 5px;
+                    font-weight: 900;
+                  "
+                >
+                  this week
+                </button>
+                <button
+                  style="
+                    text-decoration: underline;
+                    text-decoration-color: yellow;
+                    text-decoration-thickness: 5px;
+                    font-weight: 900;
+                  "
+                >
+                  this month
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="container mx-auto flex mt-6 justify-center items-center">
+        <img src="./img/reklam1.jpg" alt="" />
+      </section>
+
+      <section class="mt-5">
+        <div class="text-3xl md:text-5xl">
+          WE SHARE
+          <span class="block text-4xl md:text-6xl font-bold">PASSION</span>
+        </div>
+        <div class="flex justify-center items-center flex-col">
+          <h1 class="text-center border-b-4 font-bold text-3xl">ART</h1>
+          <div class="grid grid-cols-12 mb-5 xl:gap-10 2xl:gap-0">
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="./img/resim4.jpg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Art</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="./img/resim1.jpg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Art</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="./img/resim3.jpg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Art</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 md:col-span-6 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="./img/resim2.jpg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Art</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <h1 class="text-center border-b-4 font-bold text-3xl">
+            ARCHITECTURE
+          </h1>
+          <div class="grid mb-5 grid-cols-12 xl:gap-10 2xl:gap-0">
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThi4xc9zfm2GQVUqI8ZxZAIttbZsZyQd-bgg&usqp=CAU"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Architecture</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqhsf_4TwfIB-q79QJe2rtHZlWhV_B5y55lQ&usqp=CAU"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Architecture</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://learn.g2.com/hubfs/iStock-685053710.jpg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Architecture</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 md:col-span-6 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://media.architecturaldigest.com/photos/56ba787ca254b168296a8fff/1:1/w_3460,h_3460,c_limit/zaha-hadid-architecture-01.jpg"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Architecture</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <h1 class="text-center border-b-4 font-bold text-3xl">DESİGN</h1>
+          <div class="grid mb-5 grid-cols-12 xl:gap-10 2xl:gap-0">
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.adsttc.com/media/images/633b/9d88/4dba/6e15/cfb1/24d7/newsletter/london-design-festival-2022-reflecting-on-the-citys-creative-history-for-design-and-making_1.jpg?1664851345"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Design</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmupnfzTEDJb3W7eydjONs-VLqbVSrVae8qw&usqp=CAU"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Design</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj0Nor_867RRr1fylnuDRJHV8PkB7pCoI5gA&usqp=CAU"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Design</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 md:col-span-6 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.pexels.com/photos/1161547/pexels-photo-1161547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Design</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <h1 class="text-center border-b-4 font-bold text-3xl">TECHNOLOGY</h1>
+          <div class="grid mb-5 grid-cols-12 xl:gap-10 2xl:gap-0">
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.pexels.com/photos/3862618/pexels-photo-3862618.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Technology</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.pexels.com/photos/2708981/pexels-photo-2708981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Technology</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.pexels.com/photos/2343475/pexels-photo-2343475.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Technology</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 md:col-span-6 xl:col-span-3 h-[10rem] md:w-[20rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.pexels.com/photos/1476321/pexels-photo-1476321.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                />
+                <div>
+                  <h3 class="underline font-bold">Technology</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <h1 class="text-center border-b-4 font-bold text-3xl">VIDEOS</h1>
+          <div class="grid mb-5 grid-cols-12 xl:gap-10 2xl:gap-0">
+            <div
+              class="col-span-6 m-5 relative xl:col-span-3 h-[10rem] md:w-[20rem] md:h-[15rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.pexels.com/photos/5352654/pexels-photo-5352654.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                  alt=""
+                />
+
+                <span
+                  class="absolute top-[30%] left-[40%] md:top-[25%] md:left-[40%] lg:top-[28%] lg:left-[40%] xl:top-[25%] xl:left-[40%]"
+                  style="
+                    background: linear-gradient(#e66465, #9198e5);
+                    border-radius: 50%;
+                  "
+                >
+                  <svg
+                    class="drop-shadow-md hidden md:inline md:w-[64px] md:h-[64px] xl:w-[80px] xl:h-[80px]"
+                    width=""
+                    height=""
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="white">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18Zm0 2c6.075 0 11-4.925 11-11S18.075 1 12 1S1 5.925 1 12s4.925 11 11 11Z"
+                        clip-rule="evenodd"
+                      />
+                      <path d="m16 12l-6 4.33V7.67L16 12Z" />
+                    </g>
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="underline font-bold">Technology</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 relative xl:col-span-3 h-[10rem] md:w-[20rem] md:h-[15rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.pexels.com/photos/13860114/pexels-photo-13860114.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                  alt=""
+                />
+
+                <span
+                  class="absolute top-[30%] left-[40%] md:top-[25%] md:left-[40%] lg:top-[28%] lg:left-[40%] xl:top-[25%] xl:left-[40%]"
+                  style="
+                    background: linear-gradient(#e66465, #9198e5);
+                    border-radius: 50%;
+                  "
+                >
+                  <svg
+                    class="drop-shadow-md hidden md:inline md:w-[64px] md:h-[64px] xl:w-[80px] xl:h-[80px]"
+                    width=""
+                    height=""
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="white">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18Zm0 2c6.075 0 11-4.925 11-11S18.075 1 12 1S1 5.925 1 12s4.925 11 11 11Z"
+                        clip-rule="evenodd"
+                      />
+                      <path d="m16 12l-6 4.33V7.67L16 12Z" />
+                    </g>
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="underline font-bold">Technology</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 relative xl:col-span-3 h-[10rem] md:w-[20rem] md:h-[15rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.pexels.com/photos/10595864/pexels-photo-10595864.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                  alt=""
+                />
+
+                <span
+                  class="absolute top-[30%] left-[40%] md:top-[25%] md:left-[40%] lg:top-[28%] lg:left-[40%] xl:top-[25%] xl:left-[40%]"
+                  style="
+                    background: linear-gradient(#e66465, #9198e5);
+                    border-radius: 50%;
+                  "
+                >
+                  <svg
+                    class="drop-shadow-md hidden md:inline md:w-[64px] md:h-[64px] xl:w-[80px] xl:h-[80px]"
+                    width=""
+                    height=""
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="white">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18Zm0 2c6.075 0 11-4.925 11-11S18.075 1 12 1S1 5.925 1 12s4.925 11 11 11Z"
+                        clip-rule="evenodd"
+                      />
+                      <path d="m16 12l-6 4.33V7.67L16 12Z" />
+                    </g>
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="underline font-bold">Technology</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+            <div
+              class="col-span-6 m-5 relative xl:col-span-3 h-[10rem] md:w-[20rem] md:h-[15rem] lg:h-[20rem]"
+            >
+              <a href="#">
+                <img
+                  class="w-full h-3/4 object-cover"
+                  src="https://images.pexels.com/photos/13440765/pexels-photo-13440765.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                  alt=""
+                />
+
+                <span
+                  class="absolute top-[30%] left-[40%] md:top-[25%] md:left-[40%] lg:top-[28%] lg:left-[40%] xl:top-[25%] xl:left-[40%]"
+                  style="
+                    background: linear-gradient(#e66465, #9198e5);
+                    border-radius: 50%;
+                  "
+                >
+                  <svg
+                    class="drop-shadow-md hidden md:inline md:w-[64px] md:h-[64px] xl:w-[80px] xl:h-[80px]"
+                    width=""
+                    height=""
+                    viewBox="0 0 24 24"
+                  >
+                    <g fill="white">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18Zm0 2c6.075 0 11-4.925 11-11S18.075 1 12 1S1 5.925 1 12s4.925 11 11 11Z"
+                        clip-rule="evenodd"
+                      />
+                      <path d="m16 12l-6 4.33V7.67L16 12Z" />
+                    </g>
+                  </svg>
+                </span>
+                <div>
+                  <h3 class="underline font-bold">Technology</h3>
+                </div>
+                <div>
+                  <p class="text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
