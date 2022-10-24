@@ -16,8 +16,6 @@ const burgerClose = document.getElementById("burger-close");
 //   }
 // });
 searchButton.addEventListener("click", () => {
-  console.log();
-
   searchİnput.style.visibility = "visible";
   searchİnput.classList.toggle("-translate-y-[200%]");
   searchİnput.classList.toggle("-translate-y-1/2");
@@ -28,7 +26,6 @@ searchButton.addEventListener("click", () => {
 });
 
 burgerButton.addEventListener("click", () => {
-  console.log(burgerBar.classList);
   burgerBar.classList.toggle("h-0");
   burgerBar.classList.toggle("open");
   burgerBar.classList.toggle("h-[400px]");
@@ -52,3 +49,26 @@ burgerClose.addEventListener("click", () => {
 
   searchİnput.style.visibility = "visible";
 });
+
+// Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
