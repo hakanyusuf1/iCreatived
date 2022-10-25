@@ -25,12 +25,12 @@
     </style>
   </head>
 
-  <body>
+  <body class="">
     <button
       type="button"
       data-mdb-ripple="true"
       data-mdb-ripple-color="light"
-      class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5"
+      class="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 z-50 right-5"
       id="btn-back-to-top"
     >
       <svg
@@ -49,13 +49,11 @@
       </svg>
     </button>
 
-    <header
-      class="container sticky top-0 bg-white shadow-md flex flex-col justify z-10 mx-auto"
-    >
-      <div class="flex justify-between relative items-center font-semibold">
-        <div
-          class="burger-bar container mx-auto overflow-hidden absolute top-0 right-0 transition-all duration-150 p-5 bg-burgerBarBg h-0 invisible"
-        >
+    <header class="sticky top-0 bg-white flex flex-col z-10">
+      <div
+        class="burger-bar w-full overflow-hidden absolute top-0 right-0 transition-all duration-150 p-5 z-20 bg-burgerBarBg h-0 invisible"
+      >
+        <div class="mx-0 md:mx-[10%] lg:mx-[15%]">
           <div class="relative flex">
             <p class="-mb-5 pb-0 text-sm select-none text-black">
               search İCreatived
@@ -207,8 +205,14 @@
             </div>
           </div>
         </div>
-        <div class="flex items-center">
-          <span id="burger-button" class="cursor-pointer">
+      </div>
+      <div
+        class="flex justify-around mx-0 md:mx-[10%] lg:mx-[15%] relative items-center h-16 font-semibold"
+      >
+        <div
+          class="flex items-center flex-row-reverse justify-between w-full lg:w-[17rem] lg:flex-row"
+        >
+          <span id="burger-button" class="block cursor-pointer">
             <svg width="32" height="32" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -216,13 +220,13 @@
               />
             </svg>
           </span>
-          <span
-            ><img class="w-52" src="./img/black-transparent-logo.png" alt=""
+          <span class="block"
+            ><img class="w-40" src="./img/black-transparent-logo.png" alt=""
           /></span>
         </div>
-        <div class="w-full h-full relative">
+        <div class="hidden lg:flex w-full h-full relative">
           <div
-            class="searchİnput absolute z-30 border invisible flex transition-all w-full -translate-y-[200%] top-full"
+            class="searchİnput absolute z-30 border invisible flex items-center transition-all w-full -translate-y-[100%] top-0"
           >
             <svg
               class="hidden md:block"
@@ -242,7 +246,9 @@
             />
           </div>
         </div>
-        <div class="flex justify-center searchButton gap-3 items-center">
+        <div
+          class="hidden lg:flex justify-center searchButton gap-3 items-center"
+        >
           <p class="font-bold text-xl hidden md:block select-none">SEARCH</p>
           <div>
             <svg width="40" height="40" viewBox="0 0 24 24">
@@ -255,8 +261,10 @@
         </div>
       </div>
     </header>
-    <main class="container mx-auto">
-      <section class="flex flex-col lg:flex-row gap-2 my-2">
+    <main
+      class="mx-0 md:mx-[10%] lg:mx-[15%] flex flex-col justify-center items-center"
+    >
+      <section class="flex flex-col lg:flex-row gap-2">
         <div class="w-full lg:w-3/4 h-40 md:h-72 lg:h-[40rem] relative">
           <img
             class="w-full h-full object-cover"
@@ -309,7 +317,7 @@
         TOP <span class="font-bold">STORIES</span>
       </h1>
       <section class="grid grid-cols-12 gap-3">
-        <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
+        <article class="col-span-12 md:col-span-6 bg-white max-w-4xl">
           <a href="#!">
             <img
               class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -339,7 +347,7 @@
             </p>
           </div>
         </article>
-        <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
+        <article class="col-span-12 md:col-span-6 bg-white max-w-4xl">
           <a href="#!">
             <img
               class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -365,7 +373,7 @@
             </p>
           </div>
         </article>
-        <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
+        <article class="col-span-12 md:col-span-6 bg-white max-w-4xl">
           <a href="#!">
             <img
               class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -393,7 +401,7 @@
             </p>
           </div>
         </article>
-        <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
+        <article class="col-span-12 md:col-span-6 bg-white max-w-4xl">
           <a href="#!">
             <img
               class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -428,7 +436,7 @@
       </h1>
       <section class="flex flex-col lg:flex-row gap-4">
         <section class="grid grid-cols-12 gap-5">
-          <article class="col-span-12 md:col-span-6 bg-white max-w-2xl">
+          <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
             <a href="#!">
               <img
                 class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -444,7 +452,7 @@
               </h2>
             </div>
           </article>
-          <article class="col-span-12 md:col-span-6 bg-white max-w-2xl">
+          <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
             <a href="#!">
               <img
                 class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -460,7 +468,7 @@
               </h2>
             </div>
           </article>
-          <article class="col-span-12 md:col-span-6 bg-white max-w-2xl">
+          <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
             <a href="#!">
               <img
                 class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -476,7 +484,7 @@
               </h2>
             </div>
           </article>
-          <article class="col-span-12 md:col-span-6 bg-white max-w-2xl">
+          <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
             <a href="#!">
               <img
                 class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -493,7 +501,7 @@
               </h2>
             </div>
           </article>
-          <article class="col-span-12 md:col-span-6 bg-white max-w-2xl">
+          <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
             <a href="#!">
               <img
                 class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -509,7 +517,7 @@
               </h2>
             </div>
           </article>
-          <article class="col-span-12 md:col-span-6 bg-white max-w-2xl">
+          <article class="col-span-12 md:col-span-6 bg-white max-w-3xl">
             <a href="#!">
               <img
                 class="h-64 md:h-96 lg:h-96 w-full object-cover"
@@ -624,8 +632,202 @@
       <div class="flex justify-center items-center my-5">
         <img src="./img/ad_horizontal.jpg" alt="" />
       </div>
-    </main>
+      <h1 class="text-5xl font-thin mt-4">
+        WE SHARE <span class="font-bold block">PASSION</span>
+      </h1>
+      <section class="flex flex-col gap-5">
+        <section class="flex flex-col mt-5 items-center relative">
+          <h1 class="font-bold mb-4 text-4xl underline italic lg:hidden">
+            ART
+          </h1>
+          <h1
+            class="font-bold text-4xl absolute -left-20 top-32 xl:top-48 -rotate-90 hidden lg:block"
+          >
+            ART
+          </h1>
+          <section class="grid grid-cols-12 gap-5">
+            <article class="col-span-12 md:col-span-4 bg-white max-w-4xl">
+              <a href="#!">
+                <img
+                  class="h-64 md:h-72 xl:h-[25rem] w-full object-cover"
+                  src="https://www.artnews.com/wp-content/uploads/2022/10/The-Rights-of-Sperm-2019-oil-on-panel-20-X-20-inches-.jpg?crop=0px%2C0px%2C1200px%2C674px&resize=450%2C253"
+                  alt=""
+                />
+              </a>
+              <div class="p-1">
+                <h5 class="text-gray-900 mb-2 underline">ART</h5>
 
+                <h2 class="font-bold text-2xl mb-2">
+                  Hello Cruel World: Julie Speed’s Paintings of Dark Imaginings
+                </h2>
+              </div>
+            </article>
+            <article class="col-span-12 md:col-span-4 bg-white max-w-4xl">
+              <a href="#!">
+                <img
+                  class="h-64 md:h-72 xl:h-[25rem] w-full object-cover"
+                  src="https://www.artnews.com/wp-content/uploads/2022/10/2022_photo-Sven-Boecker-RGraham_Lisson_10857-1.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-1">
+                <h5 class="text-gray-900 mb-2 underline">ART</h5>
+
+                <h2 class="font-bold text-2xl mb-2">
+                  Rodney Graham, Canadian Artist Whose Deadpan Flair Charmed
+                  Critics, Dies at 73
+                </h2>
+              </div>
+            </article>
+            <article class="col-span-12 md:col-span-4 bg-white max-w-4xl">
+              <a href="#!">
+                <img
+                  class="h-64 md:h-72 xl:h-[25rem] w-full object-cover"
+                  src="https://static.euronews.com/articles/stories/07/13/28/36/1100x619_cmsv2_9817a1b0-a58b-5cd2-8977-eca605fa0352-7132836.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-1">
+                <h5 class="text-gray-900 mb-2 underline">ART</h5>
+
+                <h2 class="font-bold text-2xl mb-2">
+                  LS Lowry's iconic football painting remains in public sight
+                  after record sale
+                </h2>
+              </div>
+            </article>
+          </section>
+        </section>
+        <section class="flex flex-col mt-5 items-center relative">
+          <h1 class="font-bold mb-4 text-4xl underline italic lg:hidden">
+            ARCHİTECTURE
+          </h1>
+          <h1
+            class="font-bold text-4xl absolute p-0 m-0 -left-48 top-32 xl:top-48 -rotate-90 hidden lg:block"
+          >
+            ARCHİTECTURE
+          </h1>
+          <section class="grid grid-cols-12 gap-5">
+            <article class="col-span-12 md:col-span-4 bg-white max-w-4xl">
+              <a href="#!">
+                <img
+                  class="h-64 md:h-72 xl:h-[25rem] w-full object-cover"
+                  src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1960,c_fill,g_auto,h_1103,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F221017104014-wakanda-city-1017.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-1">
+                <h5 class="text-gray-900 mb-2 underline">Architecture</h5>
+
+                <h2 class="font-bold text-2xl mb-2">
+                  Why Wakanda might be a model for our future cities
+                </h2>
+              </div>
+            </article>
+            <article class="col-span-12 md:col-span-4 bg-white max-w-4xl">
+              <a href="#!">
+                <img
+                  class="h-64 md:h-72 xl:h-[25rem] w-full object-cover"
+                  src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1100,c_fill,g_auto/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F220923031744-05-aga-khan-award-2022.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-1">
+                <h5 class="text-gray-900 mb-2 underline">Architecture</h5>
+
+                <h2 class="font-bold text-2xl mb-2">
+                  Aga Khan Award: $1 million prize recognizes world's best new
+                  community architecture
+                </h2>
+              </div>
+            </article>
+            <article class="col-span-12 md:col-span-4 bg-white max-w-4xl">
+              <a href="#!">
+                <img
+                  class="h-64 md:h-72 xl:h-[25rem] w-full object-cover"
+                  src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_1100,c_fill,g_auto/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F220831162631-08-downtown-circle-znera-space-dubai.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-1">
+                <h5 class="text-gray-900 mb-2 underline">Architecture</h5>
+
+                <h2 class="font-bold text-2xl mb-2">
+                  Architects in Dubai dream up a massive space-age ring to
+                  encircle the world's tallest building
+                </h2>
+              </div>
+            </article>
+          </section>
+        </section>
+        <section class="flex flex-col mt-5 items-center relative">
+          <h1 class="font-bold mb-4 text-4xl underline italic lg:hidden">
+            DESIGN
+          </h1>
+          <h1
+            class="font-bold text-4xl absolute p-0 m-0 -left-28 top-32 xl:top-48 -rotate-90 hidden lg:block"
+          >
+            DESIGN
+          </h1>
+          <section class="grid grid-cols-12 gap-5">
+            <article class="col-span-12 md:col-span-4 bg-white max-w-4xl">
+              <a href="#!">
+                <img
+                  class="h-64 md:h-72 xl:h-[25rem] w-full object-cover"
+                  src="https://static.dezeen.com/uploads/2022/08/tegel-projekt-berlin-architecture-news_dezeen_2364_col_3-852x426.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-1">
+                <h5 class="text-gray-900 mb-2 underline">Design</h5>
+
+                <h2 class="font-bold text-2xl mb-2">
+                  Berlin set to build car-free housing and technology district
+                  on former Tegel Airport
+                </h2>
+              </div>
+            </article>
+            <article class="col-span-12 md:col-span-4 bg-white max-w-4xl">
+              <a href="#!">
+                <img
+                  class="h-64 md:h-72 xl:h-[25rem] w-full object-cover"
+                  src="https://static.dezeen.com/uploads/2022/10/neotenic-lamp-petite-friture-showroom_dezeen_2364_col_2-1-852x479.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-1">
+                <h5 class="text-gray-900 mb-2 underline">Design</h5>
+
+                <h2 class="font-bold text-2xl mb-2">
+                  Neotenic lamp by Petite Friture among 17 new products on
+                  Dezeen Showroom
+                </h2>
+              </div>
+            </article>
+            <article class="col-span-12 md:col-span-4 bg-white max-w-4xl">
+              <a href="#!">
+                <img
+                  class="h-64 md:h-72 xl:h-[25rem] w-full object-cover"
+                  src="https://static.dezeen.com/uploads/2022/10/john-morden-centre-mae-architects_dezeen_2364_col_5-852x1065.jpg"
+                  alt=""
+                />
+              </a>
+              <div class="p-1">
+                <h5 class="text-gray-900 mb-2 underline">Design</h5>
+
+                <h2 class="font-bold text-2xl mb-2">
+                  Mae designs senior day-care centre in southeast London to
+                  tackle social isolation
+                </h2>
+              </div>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
+    <div class="flex justify-center items-center my-5">
+      <img src="./img/ad_horizontal.jpg" alt="" />
+    </div>
     <footer
       class="bg-black text-white lg:h-[25rem] justify-evenly flex flex-col"
     >

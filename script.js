@@ -17,9 +17,9 @@ const burgerClose = document.getElementById("burger-close");
 // });
 searchButton.addEventListener("click", () => {
   searchİnput.style.visibility = "visible";
-  searchİnput.classList.toggle("-translate-y-[200%]");
-  searchİnput.classList.toggle("-translate-y-1/2");
-  if (searchİnput.classList.contains("-translate-y-[200%]")) {
+  searchİnput.classList.toggle("-translate-y-[100%]");
+  searchİnput.classList.toggle("h-full");
+  if (searchİnput.classList.contains("-translate-y-[100%]")) {
     searchİnput.lastElementChild.value = "";
     searchİnput.style.visibility = "hidden";
   }
