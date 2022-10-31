@@ -15,6 +15,10 @@ const burgerClose = document.getElementById("burger-close");
 //     searchİnput.style.top = "-20px";
 //   }
 // });
+const getFocus = () => {
+  document.getElementById("myText").focus();
+};
+
 searchButton.addEventListener("click", () => {
   searchİnput.style.visibility = "visible";
   searchİnput.classList.toggle("-translate-y-[100%]");
