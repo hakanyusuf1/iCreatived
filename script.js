@@ -76,3 +76,17 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+const moreButton = document.getElementById("moreButton");
+const moreButtonMob = document.getElementById("moreButtonMob");
+
+moreButton.addEventListener("click", () => {
+  console.log();
+  moreButton.nextElementSibling.classList.toggle("w-0");
+  moreButton.nextElementSibling.classList.toggle("w-28");
+});
+moreButtonMob.addEventListener("click", () => {
+  console.log();
+  moreButtonMob.nextElementSibling.classList.toggle("w-0");
+  moreButtonMob.nextElementSibling.classList.toggle("w-40");
+});
